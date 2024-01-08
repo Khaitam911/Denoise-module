@@ -1,10 +1,11 @@
 ## Problem description
 Speech denoising is the process of removing unwanted noise from speech signals while preserving the integrity of the speech itself. \
 The problem of speech denoising arises when speech signals are corrupted by various types of noise, such as background noise, microphone noise, or electrical interference.\
-This project aim to denoise signal given input is the noisy signal expected output will give us the denoised signal
+This project aim to denoise signal given input is the noisy signal expected output will give us the denoised signal and evaluate it. The module include 2 methods: Spectral subtraction and FRCRN 
+## Data usage
+Data Usage Note: Bahnar Voice Dataset
 
-## Denoise-module
-This module is used to denoise audio file and evaluate it. The module include 2 methods: Spectral subtraction and FRCRN 
+The Bahnar voice dataset provided by Prof. Quan Thanh Tho is used for research purposes in this project. If you intend to use this dataset, please contact Prof. Tho to discuss your usage and obtain permission.
 
 ## How to use the file
 Step 1: To use the denoise function please first install the requirement packages in requirements.txt\
@@ -32,3 +33,9 @@ Step 5: Evaluation Description (For reference)
 This part is to evaluate how good a signal is compare to a clean signal. It use the two metrics as follow:
 - PESQ (Perceptual Evaluation Of Speech Quality) is an objective and full-reference speech quality evaluation method. The score ranges from -0.5 to 4.5. The higher the score, the better the speech quality.
 - STOI (Short-Time Objective Intelligibility) reflects the objective evaluation of speech intelligibility by the human auditory perception system. The STOI value is between 0 and 1. The larger the value, the higher the speech intelligibility , the clearer it is.
+
+## Reference
+I based on those github to denoise by FRCRN: \
+https://github.com/alibabasglab/FRCRN/tree/main  \
+https://github.com/modelscope/modelscope
+
